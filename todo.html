@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- changes label on tab  -->
+	<title>Practical Javascipt</title>
+	<!-- eventListener in todoList.js line 197 stops working after adding bootstrap
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+
+	<style type="text/css">
+    .header-image {
+      background-image: url(glasstent.jpg);
+      height: 80vh;
+      background-position: center;
+      background-size: auto 150%;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      background-color: rgb(96, 208, 228);
+    } -->
+  </style>
+</head>
+
+<body>
+	<h1>my to-do list</h1>
+
+	<!-- <h2>Medical School<br>
+		<button>Display To-Dos</button>
+		<button>Toggle All</button>
+	</h2>
+
+	<h2>Coding<br>
+		<button>Display To-Dos</button>
+		<button>Toggle All</button>
+	</h2> -->
+
+	<h2>
+		<button id="displayToDosButton">Display To-Dos</button>
+		<button id="toggleAllButton">Toggle All</button>
+
+		<div>
+			<button onclick="handlers.displayTodos()">Display To-Dos</button>
+			<button onclick="handlers.toggleAll()">Toggle All</button>
+		</div>
+
+		<div> 
+			<button onclick="handlers.addTodo()">Add</button>
+			<input id= "addTodoTextInput"  type= "text">		
+		</div>
+
+		<div> 
+			<button onclick="handlers.changeTodo()">Change Todo</button>
+			<input id= "changeTodoPosition"  type= "number">		
+			<input id= "changeTodoText"  type= "text">		
+		</div>
+
+		<div> 
+			<button onclick="handlers.deleteTodo()">Delete Todo</button>
+			<input id= "deleteTodoPosition"  type= "number">		
+		</div>
+
+		<div> 
+			<button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+			<input id= "toggleCompletedPosition"  type= "number">		
+		</div>
+
+		<ul>
+			<!-- insert from Javascript -->
+
+		</ul>
+	</h2>
+
+	<p></p>
+
+	<script src = 'todoList.js'></script>
+
+</body>
+
+</html>
